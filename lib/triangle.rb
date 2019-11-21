@@ -5,13 +5,13 @@ class Triangle
       @side1 = side1
       @side2 = side2
       @side3 = side3
-      @sides << side1 
+      @sides << side1
       @sides << side2
       @sides << side3
     end
-  
-    def kind 
-      if @sides.any? {|e| e == 0 } || 
+
+    def kind
+      if @sides.any? {|e| e == 0 } ||
           @sides.any? {|e| e < 0 } ||
           @side1 + @side2 <= @side3 || @side2 + @side3 <= @side1 || @side1 + @side3 <= @side2
         begin
@@ -20,7 +20,7 @@ class Triangle
         end
       elsif @side1 == @side2 && @side2 == @side3
         :equilateral
-      elsif 
+      elsif
         @side1 != @side2 && @side2 != @side3 && @side1 != @side3
         :scalene
       else
