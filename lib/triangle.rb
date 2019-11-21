@@ -18,6 +18,7 @@ class Triangle
     end
 
  class TriangleError < StandardError
-   Return " Your triangles seems to be a little off.... Sorry bud"
+   def message
+   Return " Your triangles seems to be a little off.... Sorry bud! Might wanna check your input. :)"
  end
 end
