@@ -12,12 +12,12 @@ class Triangle
         :equilateral
       elsif (@side1 != @side2 && @side1 != @side3) && (@side2 != @side3)
         :scalene
-      else 
+      else
         :isosceles
-      end 
-    end 
- 
+      end
+    end
+
  class TriangleError < StandardError
    Return " Your triangles seems to be a little off.... Sorry bud"
- end  
+ end
 end
